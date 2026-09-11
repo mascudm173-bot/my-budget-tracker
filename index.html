@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
+            alt="Budget tracker wallet icon"
+            width="70"
+        >
+        <h1>My Budget Tracker</h1>
+        <p>Track your expenses and manage your money wisely.</p>
+    </header>
+
+    <main>
+        <!-- Add Expense Section -->
+        <section class="add-expense-section">
+            <h2>Add an Expense</h2>
+
+            <form>
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name" name="expense-name" placeholder="e.g. Lunch">
+
+                <label for="expense-amount">Amount (KES):</label>
+                <input type="number" id="expense-amount" name="expense-amount" placeholder="e.g. 500">
+
+                <label for="expense-category">Category:</label>
+                <select id="expense-category" name="expense-category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="expense-date">Date:</label>
+                <input type="date" id="expense-date" name="expense-date">
+
+                <button type="button">Add Expense</button>
+            </form>
+        </section>
+
+        <!-- Expenses Section -->
+        <section class="expenses-section">
+            <h2>My Expenses</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>KES 450</td>
+                        <td>Food</td>
+                        <td>2026-09-08</td>
+                    </tr>
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>KES 200</td>
+                        <td>Transport</td>
+                        <td>2026-09-08</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>KES 1,500</td>
+                        <td>Food</td>
+                        <td>2026-09-09</td>
+                    </tr>
+                    <tr>
+                        <td>Movie</td>
+                        <td>KES 800</td>
+                        <td>Entertainment</td>
+                        <td>2026-09-09</td>
+                    </tr>
+                    <tr>
+                        <td>Electricity</td>
+                        <td>KES 1,200</td>
+                        <td>Other</td>
+                        <td>2026-09-10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- How To Use Section -->
+        <section class="help-section">
+            <details>
+                <summary>How to use this tracker</summary>
+                <p>
+                    Enter the name, amount, category, and date of an expense in the form.
+                    Click "Add Expense" when you are ready. The button is only for practice
+                    in this week; JavaScript will make it functional in a later week.
+                </p>
+            </details>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section class="video-section">
+            <h2>Budgeting Tip</h2>
+            <p>Watch this video to learn a simple approach to managing your money.</p>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5mJ9W6LwW9E"
+                title="Budgeting tips video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Budget Tracker</p>
+    </footer>
+
+</body>
+</html>
